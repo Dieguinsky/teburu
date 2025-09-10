@@ -1,0 +1,153 @@
+:root {
+    --azul-oscuro: #001024;
+    --azul-medio: #043c4d;
+    --verde-azulado: #148474;
+    --amarillo-claro: #dadc88;
+    --naranja: #d48212;
+    --rojo-anaranjado: #d63e15;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--azul-oscuro);
+    color: var(--amarillo-claro);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+header {
+    background: var(--azul-oscuro);
+    color: var(--amarillo-claro);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--azul-medio);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--amarillo-claro);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+header nav a {
+    color: var(--amarillo-claro);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--naranja);
+}
+
+main {
+    padding-top: 60px; /* Ajuste para el header fijo */
+}
+
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: var(--azul-medio);
+}
+
+#hero {
+    background-color: var(--azul-oscuro);
+    padding: 6rem 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--verde-azulado);
+    margin-bottom: 2rem;
+}
+
+.cta {
+    display: inline-block;
+    background: var(--rojo-anaranjado);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background: var(--naranja);
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+.servicio {
+    background: var(--azul-oscuro);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.servicio h4 {
+    color: var(--verde-azulado);
+    margin-top: 0;
+}
+
+.testimonio {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.testimonio cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--naranja);
+}
+
+footer {
+    background: var(--azul-oscuro);
+    color: var(--amarillo-claro);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--azul-medio);
+}

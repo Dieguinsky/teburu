@@ -4,62 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Teburu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-        }
-        main {
-            max-width: 600px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 32px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            text-align: center;
-        }
-        h1 {
-            margin: 0 0 16px 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
-        }
-        p {
-            font-size: 1.2em;
-            color: #444;
-        }
-        .cta {
-            display: inline-block;
-            margin-top: 24px;
-            padding: 12px 32px;
-            background: #222;
-            color: #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-        .cta:hover {
-            background: #444;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <h1>Estudio Teburu</h1>
-        <p>Tu espacio</p>
+        <div class="container">
+            <h1>Estudio Teburu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h2>Bienvenido</h2>
-        <p>En Estudio Teburu ofrecemos clases, talleres y recursos para músicos de todos los niveles. Descubre tu potencial y lleva tu música al siguiente nivel.</p>
-        <a href="#" class="cta">Contáctanos</a>
+        <section id="hero">
+            <div class="container">
+                <h2>Sonido que define tu arte</h2>
+                <p>Producción, mezcla y masterización de alta calidad.</p>
+                <a href="#contacto" class="cta">Contáctanos</a>
+            </div>
+        </section>
+
+        <section id="nosotros">
+            <div class="container">
+                <h3>Nosotros</h3>
+                <p>Somos un equipo de ingenieros y productores apasionados por la música. En Estudio Teburu, creemos en la colaboración y en la búsqueda del sonido perfecto para cada artista.</p>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="container">
+                <h3>Servicios</h3>
+                <div class="servicios-grid">
+                    <div class="servicio">
+                        <h4>Producción Musical</h4>
+                        <p>Desarrollamos tu idea desde cero hasta convertirla en una canción completa.</p>
+                    </div>
+                    <div class="servicio">
+                        <h4>Mezcla</h4>
+                        <p>Equilibramos y procesamos cada elemento para lograr una cohesión sonora profesional.</p>
+                    </div>
+                    <div class="servicio">
+                        <h4>Masterización</h4>
+                        <p>Damos el toque final a tu música, optimizándola para todas las plataformas de streaming.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios">
+            <div class="container">
+                <h3>Testimonios</h3>
+                <div class="testimonio">
+                    <p>"El equipo de Estudio Teburu llevó mi sonido a otro nivel. ¡Totalmente recomendados!"</p>
+                    <cite>- Artista Satisfecho</cite>
+                </div>
+                <div class="testimonio">
+                    <p>"Profesionalismo y una calidad de audio increíble. Volveré a grabar aquí sin dudarlo."</p>
+                    <cite>- Banda Local</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h3>Contacto</h3>
+                <p>¿Listo para empezar tu próximo proyecto?</p>
+                <a href="mailto:contacto@estudioteburu.com" class="cta">contacto@estudioteburu.com</a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Estudio Teburu. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
